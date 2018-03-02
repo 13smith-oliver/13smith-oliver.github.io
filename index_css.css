@@ -20,10 +20,15 @@ body {
 .hr-width {
 	width: 85vw;
 }
+.hr-small {
+	width: 55vw;
+}
 .main {
 	font-family: 'Montserrat', sans-serif;
+	width: 95vw;
+	padding: 2vh 2.5vw;
 }
-.sub-headings {
+.headings, .sub-headings {
 	font-family: 'Roboto', sans-serif;
 	margin-top: 1vh;
 	margin-bottom: 1vh;
