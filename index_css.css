@@ -1,5 +1,8 @@
 body {
 	margin: 0;
+	background: #6190e8; 
+	background: -webkit-linear-gradient(to right, #424647, #73777A);
+    background: linear-gradient(to right, #424647, #73777A);
 }
 .rainbow {
   background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
@@ -9,29 +12,28 @@ body {
   background-clip: text;
 }
 .centre, .centre a {
-	/*width: 100vw;;*/
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center
 }
 .r-bord{
-	border-right: 0.1vw solid #BBB;
+	border-right: 1px solid #BBB;
 }
 .hr-width {
-	width: 85vw;
+	width: 85%;
 }
 .hr-small {
-	width: 55vw;
+	width: 55%;
 }
 .main {
 	font-family: 'Montserrat', sans-serif;
-	width: 95vw;
-	padding: 2vh 2.5vw;
+	width: 95%;
+	padding: 2% 0 2% 2%;
 }
 .headings, .sub-headings {
 	font-family: 'Roboto', sans-serif;
-	margin-top: 1vh;
-	margin-bottom: 1vh;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 .top-bar {
     background-color: #333;
@@ -42,7 +44,7 @@ body {
     display: block;
     color: #F2F2F2;
     text-align: center;
-    padding: 2vh 0;
+    padding: 1% 0;
     text-decoration: none;
     font-size: 17px;
 	font-family: 'Roboto', sans-serif;
@@ -52,10 +54,10 @@ body {
     color: black;
 }
 .t-b-small {
-	width: 18.1vw;
+	width: 18%;
 }
 .t-b-large {
-	width: 27.2vw;
+	width: 27.2%;
 }
 .active {
     background-color: #4CAF50;
@@ -70,19 +72,27 @@ body {
 	 display: none;
   }
   .top-bar a.icon {
-    float: right;
-    display: block;
+	float: right;
+	display: block;
   }
+}
+
+@media screen and (max-width: 650px) {
   .top-bar.responsive {
 	position: relative;
   }
-  .top-bar.responsive a {
+  .top-bar.responsive a.icon {
+    position: absolute;
+	right: 0;
+	top: 0;
+  }
+  .top-bar.responsive a:not(:nth-child(7)) {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
+	width: 100%;
+	padding-left: 2%;
 	border: 0;
-	width: 100vw;
-	padding-left: 2vw;
   }
   #ramsey, #eduqas {
   	  display: none;
@@ -90,14 +100,14 @@ body {
 }
 #ramsey {
 	position: absolute;
-	width: 15vw;
+	width: 15%;
 	max-width: 165px;
 }
 #eduqas {
 	position: absolute;
-	width: 15vw;
+	width: 15%;
 	max-width: 187px;
-	padding-top: 5vh;
-	padding-right: 2vw;
+	padding-top: 5%;
+	padding-right: 2%;
 	right: 0;
 }
