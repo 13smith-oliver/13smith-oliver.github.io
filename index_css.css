@@ -28,7 +28,7 @@ body {
 .main {
 	font-family: 'Montserrat', sans-serif;
 	width: 95%;
-	padding: 2% 0 2% 2%;
+	padding-left: 2%;
 }
 .headings, .sub-headings {
 	font-family: 'Roboto', sans-serif;
