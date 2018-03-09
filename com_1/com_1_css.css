@@ -1,8 +1,8 @@
 body {
 	margin: 0;
-	background: #A1A1A1; 
-	background: -webkit-linear-gradient(to right, #666C6E, #A1A1A1);
-    background: linear-gradient(to right, #666C6E, #A1A1A1);
+	background: #DCDCDC; 
+	background: -webkit-linear-gradient(to right, #A1A1A1, #DCDCDC);
+    background: linear-gradient(to right, #A1A1A1, #DCDCDC);
 }
 .rainbow {
   background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
