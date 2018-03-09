@@ -93,10 +93,11 @@ body {
 }
 table {
     border-collapse: collapse;
+	padding-left: 2%;
 }
 
 table, th, td {
-    border-bottom: 1px solid black;
+    border: 1px solid black;
 }
 th {
 	padding-top: 10px;
