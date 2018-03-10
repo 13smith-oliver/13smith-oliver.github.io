@@ -111,7 +111,7 @@ td {
 }
 
 tr.header {
-	cursor: ponter;
+	cursor: pointer;
 	display: table-row;
 }
 
