@@ -120,6 +120,6 @@ tr {
 	display: none;
 }
 
-tr:first-child {
+tr td:first-child {
 	font-weight: bold;
 }
