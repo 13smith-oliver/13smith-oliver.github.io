@@ -119,3 +119,7 @@ tr.header {
 tr {
 	display: none;
 }
+
+tr:first-child {
+	font-weight: bold;
+}
