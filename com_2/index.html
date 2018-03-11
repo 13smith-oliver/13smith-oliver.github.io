@@ -5,6 +5,23 @@
     <meta name="author" content="Oliver Smith" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/top_nav_script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var $headers = $('.header').click(function () {
+                $(this).find('span').text(function (_, value) {
+                    return value == '-' ? '+' : '-'
+                });
+                if ($(this).nextUntil('tr.header').css("display") == "none") {
+                    $(this).nextUntil('tr.header').css("display", "table-row")
+                }
+                else {
+                    $(this).nextUntil('tr.header').css("display", "none")
+                }
+            });
+        });
+    </script>
+
     <link href="com_2_css.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
     <title>GCSE Computer Science</title>
@@ -53,7 +70,7 @@
                 <td>Use abstraction effectively to appropriately structure programs into modular parts with clear, well-documented interfaces.</td>
             </tr>
             <tr class="header">
-                <td id="2.2" colspan="2">2. Algorithms and programming constructs <span>+</span></td>
+                <th id="2.2" colspan="2">2. Algorithms and programming constructs <span>+</span></th>
             </tr>
             <tr>
                 <td>Algorithms</td>
@@ -77,11 +94,21 @@
             </tr>
             <tr>
                 <td></td>
-                <td>Follow and make alterations to algorithms and programs that solve problems using: sequence, selection and iteration input, processing and output.</td>
+                <td>Follow and make alterations to algorithms and programs that solve problems using:
+                    <ul>
+                        <li>sequence, selection and iteration</li>
+                        <li>input, processing and output.</li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <td></td>
-                <td>Write algorithms and programs that solve problems using: sequence, selection and iteration input, processing and output.</td>
+                <td>Write algorithms and programs that solve problems using:
+                    <ul>
+                        <li>sequence, selection and iteration</li>
+                        <li>input, processing and output.</li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <td>Variables</td>
@@ -124,22 +151,71 @@
                 <td>Evaluate the efficiency of an algorithm or program using logical reasoning and test data.</td>
             </tr>
             <tr class="header">
-                <td id="2.3" colspan="2">3. Programming languages <span>+</span></td>
+                <th id="2.3" colspan="2">3. Programming languages <span>+</span></th>
             </tr>
             <tr>
                 <td>Markup languages</td>
-                <td>Design, write, test and refine HTML pages using the following tags: HTML Head Title Body Headings Paragraph Italic Bold Centre align Anchor Unordered List List Item Blockquote Horizontal Rule Image and their corresponding closures.</td>
+                <td>Design, write, test and refine HTML pages using the following tags:
+                    <ul>
+                        <li>HTML</li>
+                        <li>Head</li>
+                        <li>Title</li>
+                        <li>Body</li>
+                        <li>Headings</li>
+                        <li>Paragraph</li>
+                        <li>Italic</li>
+                        <li>Bold</li>
+                        <li>Centre align</li>
+                        <li>Anchor</li>
+                        <li>Unordered List</li>
+                        <li>List Item</li>
+                        <li>Blockquote</li>
+                        <li>Horizontal Rule</li>
+                        <li>Image</li>
+                        <li>and their corresponding closures.</li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <td>Object oriented languages</td>
-                <td>Design, write, test and refine Java programs within the Greenfoot environment, using the following skills: Create new and extend existing classes Create new and edit existing objects Create new and edit existing worlds Write and invoke methods Change existing methods Create new and edit existing properties (including public, private, static, etc.) Add and remove objects from worlds Use actors Move objects around a world Keyboard input Add and play sounds Implement and use parameter passing (by value and by reference) Access one object from another Implement object collision detection Implement random number generation Use the concept of inheritance and encapsulation.</td>
+                <td>Design, write, test and refine Java programs within the Greenfoot environment, using the following skills:
+                    <ul>
+                        <li>Create new and extend existing classes</li>
+                        <li>Create new and edit existing objects</li>
+                        <li>Create new and edit existing worlds</li>
+                        <li>Write and invoke methods</li>
+                        <li>Change existing methods</li>
+                        <li>Create new and edit existing properties (including public, private, static, etc.)</li>
+                        <li>Add and remove objects from worlds</li>
+                        <li>Use actors Move objects around a world</li>
+                        <li>Keyboard input</li>
+                        <li>Add and play sounds</li>
+                        <li>Implement and use parameter passing (by value and by reference)</li>
+                        <li>Access one object from another</li>
+                        <li>Implement object collision detection</li>
+                        <li>Implement random number generation</li>
+                        <li>Use the concept of inheritance and encapsulation.</li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <td>Assembly language</td>
-                <td>Design, write, test and refine simple assembly programs using the following mnemonics: Input INP Output OUT Store STA Load LDA Add ADD Subtract SUB Branch BRA End/Stop/Halt HLT Data definition DAT</td>
+                <td>Design, write, test and refine simple assembly programs using the following mnemonics:
+                    <ul>
+                        <li>Input INP</li>
+                        <li>Output OUT</li>
+                        <li>Store STA</li>
+                        <li>Load LDA</li>
+                        <li>Add ADD</li>
+                        <li>Subtract SUB</li>
+                        <li>Branch BRA</li>
+                        <li>End/Stop/Halt HLT</li>
+                        <li>Data definition DAT</li>
+                    </ul>
+                </td>
             </tr>
             <tr class="header">
-                <td id="2.4" colspan="2">4. Data structures and data types <span>+</span></td>
+                <th id="2.4" colspan="2">4. Data structures and data types <span>+</span></th>
             </tr>
             <tr>
                 <td>Implementing data structures</td>
@@ -158,7 +234,7 @@
                 <td>Describe the scope and lifetime of variables in algorithms and programs.</td>
             </tr>
             <tr class="header">
-                <td id="2.5" colspan="2">5. Security and authentication <span>+</span></td>
+                <th id="2.5" colspan="2">5. Security and authentication <span>+</span></th>
             </tr>
             <tr>
                 <td>Security techniques</td>
