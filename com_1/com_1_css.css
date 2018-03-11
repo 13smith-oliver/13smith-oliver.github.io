@@ -95,6 +95,7 @@ body {
 table {
     border-collapse: collapse;
 	padding-left: 2%;
+	width: 100%;
 }
 
 table, th, td, tr {

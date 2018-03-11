@@ -7,12 +7,17 @@
     <script src="/top_nav_script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(function(){
+        $(function () {
             var $headers = $('.header').click(function () {
                 $(this).find('span').text(function (_, value) {
                     return value == '-' ? '+' : '-'
                 });
-            $(this).nextUntil('tr.header').slideToggle(100, function () {});
+                if ($(this).nextUntil('tr.header').css("display") == "none") {
+                    $(this).nextUntil('tr.header').css("display", "table-row")
+                }
+                else {
+                    $(this).nextUntil('tr.header').css("display", "none")
+                }
             });
         });
     </script>
