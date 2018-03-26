@@ -112,13 +112,8 @@ td {
 }
 
 tr.header {
-	cursor: pointer;
 	display: table-row;
 	background-color: #B4B4B4;
-}
-
-tr {
-	display: none;
 }
 
 tr td:first-child {
