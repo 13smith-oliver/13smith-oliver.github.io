@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Oliver Smith" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/top_nav_script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var $headers = $('.header').click(function () {
+                $(this).find('span').text(function (_, value) {
+                    return value == '-' ? '+' : '-'
+                });
+                if ($(this).nextUntil('tr.header').css("display") == "none") {
+                    $(this).nextUntil('tr.header').css("display", "table-row")
+                }
+                else {
+                    $(this).nextUntil('tr.header').css("display", "none")
+                }
+            });
+        });
+    </script>
+
+    <link href="com_2_css.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <title>GCSE Computer Science</title>
+</head>
+<body>
+    <div class="top-bar" id="myTopnav">
+        <a href="/com_1" class="r-bord t-b-small">Component 1</a>
+        <a href="#" class="active r-bord t-b-small">Component 2</a>
+        <a href="/index.html" class="r-bord t-b-large">Computer Science</a>
+        <a href="/com_3" class="r-bord t-b-small">Component 3</a>
+        <a href="/revision" class="t-b-small">Revision</a>
+        <a href="javascript:void(0);" class="icon" onclick="topNavFunc()" style="float: right; diplay: block; width: 5vw; padding-right: 3vw;">&#9776;</a>
+    </div>
+    <div class="main">
+        <p>
+            Component 2 assesses practical Computer Science. In your exam, you may be required to
+            mark up HTML, write the pseudocode for given input and outputs, and write Java in the Greenfoot editor.
+        </p>
+        <hr class="hr-width" />
+        <div class="centre">
+            <p style="margin: 5px;"><a href="#2.1">2.1: Problem solving</a></p>
+            <p style="margin: 5px;"><a href="#2.2">2.2: Algorithms and programming constructs</a></p>
+            <p style="margin: 5px;"><a href="#2.3">2.3: Programming languages</a></p>
+            <p style="margin: 5px;"><a href="#2.4">2.4: Data structures and data types</a></p>
+            <p style="margin: 5px;"><a href="#2.5">2.5: Security and authentication</a></p>
+        </div>
+        <hr class="hr-width" />
+        <table>
+            <colgroup>
+                <col style="width: 40%;">
+                <col style="width: 60%;">
+            </colgroup>
+            <tr class="header">
+                <th id="2.1" colspan="2">1. Problem solving <span>+</span></th>
+            </tr>
+            <tr>
+                <td>Problem solving</td>
+                <td>Use a systematic approach to problem solving including the use of decomposition and abstraction.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Use abstraction effectively to model selected aspects of the external world in an algorithm or program.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Use abstraction effectively to appropriately structure programs into modular parts with clear, well-documented interfaces.</td>
+            </tr>
+            <tr class="header">
+                <th id="2.2" colspan="2">2. Algorithms and programming constructs <span>+</span></th>
+            </tr>
+            <tr>
+                <td>Algorithms</td>
+                <td>Use common methods of defining algorithms, including pseudo-code and flowcharts.</td>
+            </tr>
+            <tr>
+                <td>Programming constructs</td>
+                <td>Identify, explain and use sub routines in algorithms and programs.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Identify, explain and use sequence, selection and iteration in algorithms and programs.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Identify, explain and use counts and rogue values in algorithms and programs.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Identify and explain constructs in object orientated programs.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Follow and make alterations to algorithms and programs that solve problems using:
+                    <ul>
+                        <li>sequence, selection and iteration</li>
+                        <li>input, processing and output.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Write algorithms and programs that solve problems using:
+                    <ul>
+                        <li>sequence, selection and iteration</li>
+                        <li>input, processing and output.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Variables</td>
+                <td>Identify, explain and use local and global variables in algorithms and programs.</td>
+            </tr>
+            <tr>
+                <td>Identifiers</td>
+                <td>Explain why the use of self-documenting identifiers and annotation are important in programs.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Give examples of self-documenting identifiers and annotation.</td>
+            </tr>
+            <tr>
+                <td>String handling</td>
+                <td>Identify, explain and use routines for string handling in algorithms and programs.</td>
+            </tr>
+            <tr>
+                <td>Mathematical operations</td>
+                <td>Identify, explain and apply computing-related mathematical operations in algorithms and programs.</td>
+            </tr>
+            <tr>
+                <td>Logical operations</td>
+                <td>Identify, use and explain the logical operators AND, OR, NOT and XOR in algorithms and programs.</td>
+            </tr>
+            <tr>
+                <td>Sorting</td>
+                <td>Describe the characteristics of merge sort and bubble sort algorithms.</td>
+            </tr>
+            <tr>
+                <td>Searching</td>
+                <td>Explain and use linear and binary search algorithms.</td>
+            </tr>
+            <tr>
+                <td>Testing and evaluation</td>
+                <td>Explain how an algorithm or program works and evaluate its fitness for purpose in meeting requirements.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Evaluate the efficiency of an algorithm or program using logical reasoning and test data.</td>
+            </tr>
+            <tr class="header">
+                <th id="2.3" colspan="2">3. Programming languages <span>+</span></th>
+            </tr>
+            <tr>
+                <td>Markup languages</td>
+                <td>Design, write, test and refine HTML pages using the following tags:
+                    <ul>
+                        <li>HTML</li>
+                        <li>Head</li>
+                        <li>Title</li>
+                        <li>Body</li>
+                        <li>Headings</li>
+                        <li>Paragraph</li>
+                        <li>Italic</li>
+                        <li>Bold</li>
+                        <li>Centre align</li>
+                        <li>Anchor</li>
+                        <li>Unordered List</li>
+                        <li>List Item</li>
+                        <li>Blockquote</li>
+                        <li>Horizontal Rule</li>
+                        <li>Image</li>
+                        <li>and their corresponding closures.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Object oriented languages</td>
+                <td>Design, write, test and refine Java programs within the Greenfoot environment, using the following skills:
+                    <ul>
+                        <li>Create new and extend existing classes</li>
+                        <li>Create new and edit existing objects</li>
+                        <li>Create new and edit existing worlds</li>
+                        <li>Write and invoke methods</li>
+                        <li>Change existing methods</li>
+                        <li>Create new and edit existing properties (including public, private, static, etc.)</li>
+                        <li>Add and remove objects from worlds</li>
+                        <li>Use actors Move objects around a world</li>
+                        <li>Keyboard input</li>
+                        <li>Add and play sounds</li>
+                        <li>Implement and use parameter passing (by value and by reference)</li>
+                        <li>Access one object from another</li>
+                        <li>Implement object collision detection</li>
+                        <li>Implement random number generation</li>
+                        <li>Use the concept of inheritance and encapsulation.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Assembly language</td>
+                <td>Design, write, test and refine simple assembly programs using the following mnemonics:
+                    <ul>
+                        <li>Input INP</li>
+                        <li>Output OUT</li>
+                        <li>Store STA</li>
+                        <li>Load LDA</li>
+                        <li>Add ADD</li>
+                        <li>Subtract SUB</li>
+                        <li>Branch BRA</li>
+                        <li>End/Stop/Halt HLT</li>
+                        <li>Data definition DAT</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="header">
+                <th id="2.4" colspan="2">4. Data structures and data types <span>+</span></th>
+            </tr>
+            <tr>
+                <td>Implementing data structures</td>
+                <td>Use one-dimensional and two-dimensional arrays,files and records.</td>
+            </tr>
+            <tr>
+                <td>Implementing data types</td>
+                <td>Use a variety of data types, including integer, Boolean, real, character and string.</td>
+            </tr>
+            <tr>
+                <td>Variables and constants</td>
+                <td>Assign, identify and explain the use of constants and variables in algorithms and programs.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Describe the scope and lifetime of variables in algorithms and programs.</td>
+            </tr>
+            <tr class="header">
+                <th id="2.5" colspan="2">5. Security and authentication <span>+</span></th>
+            </tr>
+            <tr>
+                <td>Security techniques</td>
+                <td>Use appropriate security techniques, including validation and authentication.</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

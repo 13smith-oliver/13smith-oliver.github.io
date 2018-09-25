@@ -1,0 +1,22 @@
+body {
+	background: linear-gradient(#00FFFF, #008888);
+	height: 100%;
+}
+html {
+	height: 100%;
+}
+.centre {
+	font-family: sans-serif;
+	background: #00FFBB;
+	width: 40%;
+	height: 60%;
+	margin: auto;
+	border-radius: 5px;
+	text-align: center;
+}
+h1 {
+	height: 15%;
+	margin-top: 15%;
+	padding-top: 25%;
+	margin-bottom: 15%;
+}
